@@ -1,0 +1,9 @@
+version: '3.0'
+services:
+  booking-microservice:
+    container_name: booking-microservice-dev
+    image: booking-microservice-dev
+    volumes:
+      - ./src:/usr/src/app/src
+    environment:
+      - NODE_ENV=development
